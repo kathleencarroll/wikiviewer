@@ -1,0 +1,162 @@
+body {
+  background-color: #00A388;
+}
+
+#page-title {
+  font-size: 3em;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+input {
+  background-color: rgba(0,0,0,0);
+  margin: 0px;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  vertical-align: top;
+  
+  color: #fff;
+  font-size: 1em;
+  
+  border-style: solid;
+  border-color: #BEEB9F;
+  border-width: 5px;
+  border-radius: 15px;
+}
+
+::placeholder {
+  color: #ddd;
+}
+
+#search-container {
+  margin: 0 auto;
+}
+
+#search-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20vh;
+  text-align: center;
+}
+
+#search-bar {
+  border-style: solid;
+  border-color: #BEEB9F;
+  border-width: 5px;
+  border-radius: 15px;
+  
+  display: inline-block;
+  margin: 0 5px;
+  
+  width: 200px;
+  height: 30px;
+}
+
+#search-button {
+  border-style: solid;
+  border-color: #BEEB9F;
+  border-width: 5px;
+  border-radius: 50%;
+  
+  color: #fff;
+    
+  display: inline-block;
+  overflow: hidden;
+  
+  width: 30px;
+  height: 30px;
+}
+
+#search-button:hover {
+  cursor: pointer;
+  color: rgba(255,255,255,.8);
+}
+
+#search-button:active {
+  border-color: rgba(190, 235, 159, .5);
+  color: rgba(255,255,255,.5);
+}
+
+.slideup {
+  animation: slide-up 1s ease;
+  animation-delay: .5s;
+  animation-iteration: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-up {
+  100% {
+    transform: translateY(-20vh);
+  }
+}
+
+#results-wrapper {
+  width: 100%;
+  animation: fadein 2s;
+  animation-delay: 2s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.result {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  opacity: 0;
+  
+  animation: fadein 2s forwards;
+  animation-delay: 1.5s;
+  
+  text-align: left;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#random {
+  color: #fff;
+  font-weight: 700;
+}
+
+#random:hover {
+  color: rgba(255,255,255,.8);
+}
+
+.bounce-away {
+  animation: bounce-away 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bounce-away {
+  10% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-400px);
+  }
+}
